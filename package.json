@@ -1,0 +1,25 @@
+{
+  "name": "directory-employees",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmorris91/directory-employees.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmorris91/directory-employees/issues"
+  },
+  "homepage": "https://github.com/cmorris91/directory-employees#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react": "^17.0.2"
+  }
+}

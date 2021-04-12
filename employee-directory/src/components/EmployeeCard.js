@@ -5,27 +5,30 @@ import API from "../utils/API"
 
 class EmployeeCard extends Component {
     state = {
-        results: {},
+        results: [],
       };
 
-    // componentDidMount() {
-    //     return this.searchEmployees
-    // }
+    componentDidMount() {
+        this.searchEmployees()
+    }
 
     searchEmployees = () => {
         API.getData()
-      .then(res=> this.setState({results: res.results[0]}))
+      .then(res=> {
+      console.log(res)
+      this.setState({results: res.data.results},()=>{
+        console.log(this.state.results)
+      })
+      })
       .catch(err => console.log(err));
     }
 
     render () {
         return (
-           <Result
-           results= {this.state.resultsresults}
-           
-           /> 
-                
-         
+          <Result 
+          results={this.state.results}
+          />
+              
         )
 
     }

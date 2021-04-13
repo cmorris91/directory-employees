@@ -1,0 +1,6 @@
+.nav {
+    display:flex;
+    justify-content: space-around;
+    text-decoration: underline;
+    font-size: 25px;
+}

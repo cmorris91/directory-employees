@@ -1,12 +1,15 @@
 import React from "react";
+import "./style.css"
 
 function Navbar () {
     return (
-    <div>
+    <div className="row">
         <nav className="nav">
             <p>Name</p>
-            <p>email</p>
-            <p>role</p>
+            <p>Photo</p>
+            <p>Email</p>
+            <p>Age</p>
+
         </nav>
     </div>
     )

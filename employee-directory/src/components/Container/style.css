@@ -1,0 +1,14 @@
+.container {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.jumbotron-fluid {
+    background-color: rgba(159, 179, 189, 0.747);
+    font-size: 60px;
+    padding: 80px;
+    text-decoration: underline;
+}
+

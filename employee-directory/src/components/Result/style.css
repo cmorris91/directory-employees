@@ -1,0 +1,11 @@
+.rows {
+    display: flex;
+    margin-top: 15px;
+    background-color: rgb(70 120 162 / 77%);
+    padding: 10px;
+    border: 2px solid rgba(159, 179, 189, 0.747);
+    border-radius: 5px;
+    color: white;
+    align-items: center;
+    font-size: 20px;
+}

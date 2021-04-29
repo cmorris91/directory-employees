@@ -1,4 +1,8 @@
 .search-bar {
     margin: 20px;
+    padding: 20px;
+}
+
+input {
     padding: 10px;
 }

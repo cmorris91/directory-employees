@@ -7,5 +7,6 @@ const BASEURL = "https://randomuser.me/api/?results=50&nat=us";
 export default {
     getData: function() {
         return axios.get(BASEURL);
-      }
+      },
   };
+

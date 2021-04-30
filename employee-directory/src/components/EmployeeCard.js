@@ -7,6 +7,7 @@ import API from "../utils/API";
 class EmployeeCard extends Component {
     state = {
         search: "",
+        filteredUsers: [],
         results: []
       };
 
@@ -36,40 +37,33 @@ class EmployeeCard extends Component {
     handleFormSubmit = event => {
       event.preventDefault();
       console.log(this.state)
+      // this.state.results.filter(item => this.state.search.includes(item.name.first)).map(results =>()
     };
     
     render () {
         return (
           <div>
-             <div className="search-bar">
-            <form className="form">
-            <input 
-            placeholder="Search by Name"
-            value={this.state.search}
-            name="search"
-            type="text"
-            onChange={this.handleInputCHange}
-            />
-            <button 
-            type="submit"
-            onClick={this.handleFormSubmit}
-            >search</button>
-            </form>
-        </div>
-          {this.state.results.map(item => (
-            <Result
-              key = {item.email}
-              firstName= {item.name.first}
-              lastName = {item.name.last}
-              image= {item.picture.medium}
-              email = {item.email}
-              age = {item.dob.age} 
-            />
-          ))} 
-          </div>   
-        )
-    }
+           {/* <Search 
+           value={this.state.search}
+           handleInputChange={this.handleInputChange}
+           handleFormSubmit={this.handleFormSubmit}
+           /> */}
+             {this.state.results.map(item => (
+               <Result
+                 key = {item.email}
+                 firstName= {item.name.first}
+                 lastName = {item.name.last}
+                 image= {item.picture.medium}
+                 email = {item.email}
+                 age = {item.dob.age} 
+               />
+             ))} 
+             </div>
+           ) 
+          }   
+        
 }
+
 
 
 export default EmployeeCard;
